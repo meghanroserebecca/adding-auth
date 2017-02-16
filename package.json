@@ -2,14 +2,16 @@
   "name": "adding-auth",
   "version": "1.0.0",
   "description": "single resource app with security authorization layer",
-  "main": "app.js",
+  "main": "server.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
     "lint": "eslint .",
     "pretest": "eslint {lib, test}/**/*.js",
-    "test": "mocha"
+    "test": "mocha --recursive",
+    "test:watch": "npm run test -- -w",
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -22,9 +24,12 @@
   },
   "homepage": "https://github.com/meghanroserebecca/adding-auth#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.16.1",
     "express": "^4.14.1",
+    "jsonwebtoken-promisified": "^1.0.3",
     "mongoose": "^4.8.2",
+    "nodemon": "^1.11.0",
     "promise": "^7.1.1"
   },
   "devDependencies": {
