@@ -10,7 +10,7 @@
     "rules": {
         "indent": [
             "error",
-            "tab"
+            4
         ],
         "no-console": [
             "error",
@@ -20,7 +20,7 @@
         ],
         "linebreak-style": [
             "error",
-            "unix"
+            "windows"
         ],
         "quotes": [
             "error",
